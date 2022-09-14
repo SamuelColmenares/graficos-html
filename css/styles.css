@@ -3,7 +3,8 @@
 }
 
 .svg-container,
-.canvas-container {
+.canvas-container,
+.animation-container {
     background-color: #edf6f9;
     width: 70%;
     min-width: 300px;
@@ -11,8 +12,12 @@
 }
 
 .canvas-container {
-    background-color: #006d77;
+    background-color: #fff;
     margin-top: 24px;
+}
+
+.animation-container {
+    margin-bottom: 50px;
 }
 
 .circle {
@@ -22,7 +27,24 @@
 
 #lienzo {
     border: #000 2px solid;
-    width: 100%;
+    width: 95%;
     height: 300px;
     min-width: 300px;
+}
+
+.elemento {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    animation-name: ejemplo;
+    animation-duration: 4s;
+}
+
+@keyframes ejemplo {
+    from {
+        background-color: #ff0000;
+    }
+    to {
+        background-color: #ffff00;
+    }
 }
